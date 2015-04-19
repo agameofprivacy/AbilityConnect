@@ -42,7 +42,7 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
         logoutButton.tintColor = UIColor.blackColor()
         self.navigationItem.leftBarButtonItem = logoutButton
         
-        self.navigationItem.title = "Ability Connect"
+        self.navigationItem.title = "AbilityConnect"
 
         self.alertController = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         
@@ -93,12 +93,14 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
         var item = self.feedItems[indexPath.row] as! PFObject
         if item.parseClassName == "Problem"{
             var cell:FeedProblemTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedProblemTableViewCell") as! FeedProblemTableViewCell
-            var title = item["title"] as? String
-            cell.titleLabel.text = "Problem \(title)"
+            var title = item["title"] as! String
+            cell.titleLabel.text = "Problem: \(title)"
             cell.detailLabel.text = item["detail"] as? String
             var tagsString:String = ""
-            for tag in item["tags"] as! [String]{
-                tagsString += ("\(tag) ")
+            if (item["tags"] as! [String]).count > 0{
+                for tag in item["tags"] as! [String]{
+                    tagsString += ("\(tag) ")
+                }
             }
             cell.tagsLabel.text = tagsString
             cell.numberOfUpvotesLabel.text = "\(5) people relate to this problem"
@@ -108,6 +110,20 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
         }
         else{
             var cell:FeedSolutionTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedSolutionTableViewCell") as! FeedSolutionTableViewCell
+            var title = item["title"] as! String
+            cell.titleLabel.text = "Solution: \(title)"
+            cell.detailLabel.text = item["detail"] as? String
+            var tagsString:String = ""
+            if (item["tags"] as! [String]).count > 0{
+                for tag in item["tags"] as! [String]{
+                    tagsString += ("\(tag) ")
+                }
+            }
+            cell.tagsLabel.text = tagsString
+            cell.numberOfUpvotesLabel.text = "\(5) people like this solution"
+            cell.numberOfCommentsLabel.text = "\(8) people commented on this solution"
+            println("solution")
+
             return cell
         }
     }

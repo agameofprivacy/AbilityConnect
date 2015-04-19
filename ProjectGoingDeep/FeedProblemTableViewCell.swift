@@ -42,7 +42,7 @@ class FeedProblemTableViewCell: UITableViewCell {
         self.avatarImageView.clipsToBounds = true
         self.avatarImageView.image = UIImage(named: "avatarPlaceholder")
         self.avatarImageView.layer.borderWidth = 1
-        self.avatarImageView.layer.borderColor = UIColor(white:0.85, alpha: 1)
+        self.avatarImageView.layer.borderColor = UIColor(white:0.85, alpha: 1).CGColor
         self.avatarImageView.contentMode = UIViewContentMode.ScaleAspectFill
         contentView.addSubview(self.avatarImageView)
         
@@ -65,6 +65,7 @@ class FeedProblemTableViewCell: UITableViewCell {
         self.upvoteButtonView.layer.borderColor = UIColor.blackColor().CGColor
         self.upvoteButtonView.layer.borderWidth = 1
         self.upvoteButtonView.layer.cornerRadius = 8
+        self.upvoteButtonView.backgroundColor = UIColor(white:0.95, alpha:1)
         contentView.addSubview(self.upvoteButtonView)
         
         self.numberOfUpvotesLabel = UILabel(frame: CGRectZero)
@@ -88,6 +89,7 @@ class FeedProblemTableViewCell: UITableViewCell {
         self.commentButtonView.layer.borderColor = UIColor.blackColor().CGColor
         self.commentButtonView.layer.borderWidth = 1
         self.commentButtonView.layer.cornerRadius = 8
+        self.commentButtonView.backgroundColor = UIColor(white:0.95, alpha:1)
         contentView.addSubview(self.commentButtonView)
         
         self.numberOfCommentsLabel = UILabel(frame: CGRectZero)
@@ -131,7 +133,7 @@ class FeedProblemTableViewCell: UITableViewCell {
         
 
         
-        var topHorizontalConstraints:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-sideMargin-[titleLabel]-sideMargin-[avatarImageView(70)]-sideMargin-|", options: NSLayoutFormatOptions.AlignAllTop, metrics: metricsDictionary, views: viewsDictionary)
+        var topHorizontalConstraints:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-sideMargin-[avatarImageView(70)]-sideMargin-[titleLabel]-sideMargin-|", options: NSLayoutFormatOptions.AlignAllTop, metrics: metricsDictionary, views: viewsDictionary)
         contentView.addConstraints(topHorizontalConstraints)
 
         var detailLabelHorizontalConstraints:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-sideMargin-[detailLabel]-sideMargin-|", options: NSLayoutFormatOptions(0), metrics: metricsDictionary, views: viewsDictionary)

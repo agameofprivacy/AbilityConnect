@@ -41,7 +41,7 @@ class FeedSolutionTableViewCell: UITableViewCell {
         self.avatarImageView.layer.cornerRadius = 35
         self.avatarImageView.clipsToBounds = true
         self.avatarImageView.layer.borderWidth = 1
-        self.avatarImageView.layer.borderColor = UIColor(white:0.85, alpha: 1)
+        self.avatarImageView.layer.borderColor = UIColor(white:0.85, alpha: 1).CGColor
         self.avatarImageView.image = UIImage(named: "avatarPlaceholder")
         self.avatarImageView.contentMode = UIViewContentMode.ScaleAspectFill
         contentView.addSubview(self.avatarImageView)
@@ -65,6 +65,7 @@ class FeedSolutionTableViewCell: UITableViewCell {
         self.upvoteButtonView.layer.borderColor = UIColor.blackColor().CGColor
         self.upvoteButtonView.layer.borderWidth = 1
         self.upvoteButtonView.layer.cornerRadius = 8
+        self.upvoteButtonView.backgroundColor = UIColor(white:0.95, alpha:1)
         contentView.addSubview(self.upvoteButtonView)
         
         self.numberOfUpvotesLabel = UILabel(frame: CGRectZero)
@@ -88,6 +89,7 @@ class FeedSolutionTableViewCell: UITableViewCell {
         self.commentButtonView.layer.borderColor = UIColor.blackColor().CGColor
         self.commentButtonView.layer.borderWidth = 1
         self.commentButtonView.layer.cornerRadius = 8
+        self.commentButtonView.backgroundColor = UIColor(white:0.95, alpha:1)
         contentView.addSubview(self.commentButtonView)
         
         self.numberOfCommentsLabel = UILabel(frame: CGRectZero)

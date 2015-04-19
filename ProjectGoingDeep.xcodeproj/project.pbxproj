@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C37627C1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37626B1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.m */; };
+		2C37627D1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37626E1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.m */; };
+		2C37627E1AE3F6CE00AC47DC /* UIView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762701AE3F6CE00AC47DC /* UIView+SLKAdditions.m */; };
+		2C37627F1AE3F6CE00AC47DC /* SLKInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762731AE3F6CE00AC47DC /* SLKInputAccessoryView.m */; };
+		2C3762801AE3F6CE00AC47DC /* SLKTextInputbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762751AE3F6CE00AC47DC /* SLKTextInputbar.m */; };
+		2C3762811AE3F6CE00AC47DC /* SLKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762771AE3F6CE00AC47DC /* SLKTextView.m */; };
+		2C3762821AE3F6CE00AC47DC /* SLKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762791AE3F6CE00AC47DC /* SLKTextViewController.m */; };
+		2C3762831AE3F6CE00AC47DC /* SLKTypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37627B1AE3F6CE00AC47DC /* SLKTypingIndicatorView.m */; };
+		2C3762851AE4104800AC47DC /* CommentsTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762841AE4104800AC47DC /* CommentsTextViewController.swift */; };
+		2C3762871AE410E800AC47DC /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762861AE410E800AC47DC /* CommentTableViewCell.swift */; };
+		2C3762981AE4166300AC47DC /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C3762891AE4166300AC47DC /* DateTools.bundle */; };
+		2C3762991AE4166300AC47DC /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37628D1AE4166300AC47DC /* DTError.m */; };
+		2C37629A1AE4166300AC47DC /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37628F1AE4166300AC47DC /* DTTimePeriod.m */; };
+		2C37629B1AE4166300AC47DC /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762911AE4166300AC47DC /* DTTimePeriodChain.m */; };
+		2C37629C1AE4166300AC47DC /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762931AE4166300AC47DC /* DTTimePeriodCollection.m */; };
+		2C37629D1AE4166300AC47DC /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762951AE4166300AC47DC /* DTTimePeriodGroup.m */; };
+		2C37629E1AE4166300AC47DC /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3762971AE4166300AC47DC /* NSDate+DateTools.m */; };
 		2C707E5D1AE382D700BF49F0 /* XLFormBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C707E0E1AE382D600BF49F0 /* XLFormBaseCell.m */; };
 		2C707E5E1AE382D700BF49F0 /* XLFormButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C707E101AE382D600BF49F0 /* XLFormButtonCell.m */; };
 		2C707E5F1AE382D700BF49F0 /* XLFormCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C707E121AE382D600BF49F0 /* XLFormCheckCell.m */; };
@@ -88,6 +105,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C37626A1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
+		2C37626B1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SLKTextView+SLKAdditions.m"; sourceTree = "<group>"; };
+		2C37626C1AE3F6CE00AC47DC /* SLKUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKUIConstants.h; sourceTree = "<group>"; };
+		2C37626D1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
+		2C37626E1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SLKAdditions.m"; sourceTree = "<group>"; };
+		2C37626F1AE3F6CE00AC47DC /* UIView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLKAdditions.h"; sourceTree = "<group>"; };
+		2C3762701AE3F6CE00AC47DC /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLKAdditions.m"; sourceTree = "<group>"; };
+		2C3762721AE3F6CE00AC47DC /* SLKInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKInputAccessoryView.h; sourceTree = "<group>"; };
+		2C3762731AE3F6CE00AC47DC /* SLKInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKInputAccessoryView.m; sourceTree = "<group>"; };
+		2C3762741AE3F6CE00AC47DC /* SLKTextInputbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextInputbar.h; sourceTree = "<group>"; };
+		2C3762751AE3F6CE00AC47DC /* SLKTextInputbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextInputbar.m; sourceTree = "<group>"; };
+		2C3762761AE3F6CE00AC47DC /* SLKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextView.h; sourceTree = "<group>"; };
+		2C3762771AE3F6CE00AC47DC /* SLKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextView.m; sourceTree = "<group>"; };
+		2C3762781AE3F6CE00AC47DC /* SLKTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextViewController.h; sourceTree = "<group>"; };
+		2C3762791AE3F6CE00AC47DC /* SLKTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextViewController.m; sourceTree = "<group>"; };
+		2C37627A1AE3F6CE00AC47DC /* SLKTypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTypingIndicatorView.h; sourceTree = "<group>"; };
+		2C37627B1AE3F6CE00AC47DC /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTypingIndicatorView.m; sourceTree = "<group>"; };
+		2C3762841AE4104800AC47DC /* CommentsTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTextViewController.swift; sourceTree = "<group>"; };
+		2C3762861AE410E800AC47DC /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		2C3762891AE4166300AC47DC /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
+		2C37628A1AE4166300AC47DC /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
+		2C37628B1AE4166300AC47DC /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
+		2C37628C1AE4166300AC47DC /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		2C37628D1AE4166300AC47DC /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
+		2C37628E1AE4166300AC47DC /* DTTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
+		2C37628F1AE4166300AC47DC /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
+		2C3762901AE4166300AC47DC /* DTTimePeriodChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodChain.h; sourceTree = "<group>"; };
+		2C3762911AE4166300AC47DC /* DTTimePeriodChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
+		2C3762921AE4166300AC47DC /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		2C3762931AE4166300AC47DC /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		2C3762941AE4166300AC47DC /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		2C3762951AE4166300AC47DC /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		2C3762961AE4166300AC47DC /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		2C3762971AE4166300AC47DC /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		2C707E0D1AE382D600BF49F0 /* XLFormBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFormBaseCell.h; sourceTree = "<group>"; };
 		2C707E0E1AE382D600BF49F0 /* XLFormBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFormBaseCell.m; sourceTree = "<group>"; };
 		2C707E0F1AE382D600BF49F0 /* XLFormButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFormButtonCell.h; sourceTree = "<group>"; };
@@ -240,6 +291,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3762681AE3F6CE00AC47DC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2C3762691AE3F6CE00AC47DC /* Additions */,
+				2C3762711AE3F6CE00AC47DC /* Classes */,
+			);
+			name = Source;
+			path = XL/Source;
+			sourceTree = "<group>";
+		};
+		2C3762691AE3F6CE00AC47DC /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				2C37626A1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.h */,
+				2C37626B1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.m */,
+				2C37626C1AE3F6CE00AC47DC /* SLKUIConstants.h */,
+				2C37626D1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.h */,
+				2C37626E1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.m */,
+				2C37626F1AE3F6CE00AC47DC /* UIView+SLKAdditions.h */,
+				2C3762701AE3F6CE00AC47DC /* UIView+SLKAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		2C3762711AE3F6CE00AC47DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C3762721AE3F6CE00AC47DC /* SLKInputAccessoryView.h */,
+				2C3762731AE3F6CE00AC47DC /* SLKInputAccessoryView.m */,
+				2C3762741AE3F6CE00AC47DC /* SLKTextInputbar.h */,
+				2C3762751AE3F6CE00AC47DC /* SLKTextInputbar.m */,
+				2C3762761AE3F6CE00AC47DC /* SLKTextView.h */,
+				2C3762771AE3F6CE00AC47DC /* SLKTextView.m */,
+				2C3762781AE3F6CE00AC47DC /* SLKTextViewController.h */,
+				2C3762791AE3F6CE00AC47DC /* SLKTextViewController.m */,
+				2C37627A1AE3F6CE00AC47DC /* SLKTypingIndicatorView.h */,
+				2C37627B1AE3F6CE00AC47DC /* SLKTypingIndicatorView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C3762881AE4166300AC47DC /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				2C3762891AE4166300AC47DC /* DateTools.bundle */,
+				2C37628A1AE4166300AC47DC /* DateTools.h */,
+				2C37628B1AE4166300AC47DC /* DTConstants.h */,
+				2C37628C1AE4166300AC47DC /* DTError.h */,
+				2C37628D1AE4166300AC47DC /* DTError.m */,
+				2C37628E1AE4166300AC47DC /* DTTimePeriod.h */,
+				2C37628F1AE4166300AC47DC /* DTTimePeriod.m */,
+				2C3762901AE4166300AC47DC /* DTTimePeriodChain.h */,
+				2C3762911AE4166300AC47DC /* DTTimePeriodChain.m */,
+				2C3762921AE4166300AC47DC /* DTTimePeriodCollection.h */,
+				2C3762931AE4166300AC47DC /* DTTimePeriodCollection.m */,
+				2C3762941AE4166300AC47DC /* DTTimePeriodGroup.h */,
+				2C3762951AE4166300AC47DC /* DTTimePeriodGroup.m */,
+				2C3762961AE4166300AC47DC /* NSDate+DateTools.h */,
+				2C3762971AE4166300AC47DC /* NSDate+DateTools.m */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
 		2C707E0B1AE382D600BF49F0 /* XL */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +530,8 @@
 				2CA607321AE3423200F7C6B9 /* NewSolutionViewController.swift */,
 				2CA607361AE3439B00F7C6B9 /* SearchViewController.swift */,
 				2CA607381AE3447D00F7C6B9 /* ItemDetailViewController.swift */,
+				2C3762841AE4104800AC47DC /* CommentsTextViewController.swift */,
+				2C3762861AE410E800AC47DC /* CommentTableViewCell.swift */,
 				2CA6064D1AE31D9E00F7C6B9 /* Images.xcassets */,
 				2CA6064F1AE31D9E00F7C6B9 /* LaunchScreen.xib */,
 				2CA606441AE31D9E00F7C6B9 /* Supporting Files */,
@@ -428,6 +544,8 @@
 			children = (
 				2CA6068D1AE324D000F7C6B9 /* Bolts.framework */,
 				2CA6068E1AE324D000F7C6B9 /* Parse.framework */,
+				2C3762881AE4166300AC47DC /* DateTools */,
+				2C3762681AE3F6CE00AC47DC /* Source */,
 				2C707E0B1AE382D600BF49F0 /* XL */,
 				2CA6067E1AE3220E00F7C6B9 /* TPKeyboardAvoiding */,
 				2CA606451AE31D9E00F7C6B9 /* Info.plist */,
@@ -551,6 +669,7 @@
 				2CA6064C1AE31D9E00F7C6B9 /* Main.storyboard in Resources */,
 				2CA606511AE31D9E00F7C6B9 /* LaunchScreen.xib in Resources */,
 				2CA6064E1AE31D9E00F7C6B9 /* Images.xcassets in Resources */,
+				2C3762981AE4166300AC47DC /* DateTools.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,16 +692,25 @@
 				2C707E5E1AE382D700BF49F0 /* XLFormButtonCell.m in Sources */,
 				2C707E691AE382D700BF49F0 /* XLFormSwitchCell.m in Sources */,
 				2C707E7A1AE382D700BF49F0 /* XLFormRowNavigationAccessoryView.m in Sources */,
+				2C37629D1AE4166300AC47DC /* DTTimePeriodGroup.m in Sources */,
 				2CA6068A1AE3220E00F7C6B9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				2C37627D1AE3F6CE00AC47DC /* UIScrollView+SLKAdditions.m in Sources */,
 				2C707E641AE382D700BF49F0 /* XLFormPickerCell.m in Sources */,
 				2C707E601AE382D700BF49F0 /* XLFormDateCell.m in Sources */,
+				2C37629A1AE4166300AC47DC /* DTTimePeriod.m in Sources */,
 				2C707E701AE382D700BF49F0 /* XLFormRowDescriptor.m in Sources */,
+				2C3762871AE410E800AC47DC /* CommentTableViewCell.swift in Sources */,
 				2CA607291AE33F1A00F7C6B9 /* FeedTableViewController.swift in Sources */,
 				2C707E7D1AE382D700BF49F0 /* XLFormValidationStatus.m in Sources */,
+				2C37627C1AE3F6CE00AC47DC /* SLKTextView+SLKAdditions.m in Sources */,
 				2C707E7F1AE382D700BF49F0 /* XLForm.m in Sources */,
+				2C37629C1AE4166300AC47DC /* DTTimePeriodCollection.m in Sources */,
 				2C707E7B1AE382D700BF49F0 /* XLFormTextView.m in Sources */,
 				2C707E6C1AE382D700BF49F0 /* XLFormOptionsObject.m in Sources */,
+				2C3762821AE3F6CE00AC47DC /* SLKTextViewController.m in Sources */,
+				2C3762801AE3F6CE00AC47DC /* SLKTextInputbar.m in Sources */,
 				2C707E6E1AE382D700BF49F0 /* XLFormViewController.m in Sources */,
+				2C37629B1AE4166300AC47DC /* DTTimePeriodChain.m in Sources */,
 				2CA6072B1AE341A100F7C6B9 /* FeedProblemTableViewCell.swift in Sources */,
 				2CA606891AE3220E00F7C6B9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				2C707E751AE382D700BF49F0 /* NSPredicate+XLFormAdditions.m in Sources */,
@@ -592,6 +720,8 @@
 				2C707E681AE382D700BF49F0 /* XLFormStepCounterCell.m in Sources */,
 				2C707E711AE382D700BF49F0 /* XLFormSectionDescriptor.m in Sources */,
 				2CA607391AE3447D00F7C6B9 /* ItemDetailViewController.swift in Sources */,
+				2C3762851AE4104800AC47DC /* CommentsTextViewController.swift in Sources */,
+				2C3762991AE4166300AC47DC /* DTError.m in Sources */,
 				2C707E631AE382D700BF49F0 /* XLFormLeftRightSelectorCell.m in Sources */,
 				2CA606881AE3220E00F7C6B9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				2CA606871AE3220E00F7C6B9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
@@ -605,17 +735,22 @@
 				2C707E741AE382D700BF49F0 /* NSObject+XLFormAdditions.m in Sources */,
 				2CA607271AE3352200F7C6B9 /* SignupViewController.swift in Sources */,
 				2C707E781AE382D700BF49F0 /* XLFormRightDetailCell.m in Sources */,
+				2C37629E1AE4166300AC47DC /* NSDate+DateTools.m in Sources */,
 				2CA6072D1AE341AA00F7C6B9 /* FeedSolutionTableViewCell.swift in Sources */,
 				2C707E761AE382D700BF49F0 /* NSString+XLFormAdditions.m in Sources */,
+				2C37627E1AE3F6CE00AC47DC /* UIView+SLKAdditions.m in Sources */,
 				2C707E7C1AE382D700BF49F0 /* XLFormRegexValidator.m in Sources */,
 				2C707E731AE382D700BF49F0 /* NSExpression+XLFormAdditions.m in Sources */,
 				2C707E621AE382D700BF49F0 /* XLFormInlineSelectorCell.m in Sources */,
 				2C707E671AE382D700BF49F0 /* XLFormSliderCell.m in Sources */,
 				2CA607371AE3439B00F7C6B9 /* SearchViewController.swift in Sources */,
 				2C707E791AE382D700BF49F0 /* XLFormRightImageButton.m in Sources */,
+				2C3762831AE3F6CE00AC47DC /* SLKTypingIndicatorView.m in Sources */,
+				2C37627F1AE3F6CE00AC47DC /* SLKInputAccessoryView.m in Sources */,
 				2C707E6D1AE382D700BF49F0 /* XLFormOptionsViewController.m in Sources */,
 				2C707E651AE382D700BF49F0 /* XLFormSegmentedCell.m in Sources */,
 				2C707E721AE382D700BF49F0 /* NSArray+XLFormAdditions.m in Sources */,
+				2C3762811AE3F6CE00AC47DC /* SLKTextView.m in Sources */,
 				2CA607331AE3423200F7C6B9 /* NewSolutionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
