@@ -749,6 +749,7 @@
 					"$(PROJECT_DIR)/ProjectGoingDeep",
 				);
 				INFOPLIST_FILE = ProjectGoingDeep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PGD-Bridging-Header.h";
@@ -764,6 +765,7 @@
 					"$(PROJECT_DIR)/ProjectGoingDeep",
 				);
 				INFOPLIST_FILE = ProjectGoingDeep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PGD-Bridging-Header.h";

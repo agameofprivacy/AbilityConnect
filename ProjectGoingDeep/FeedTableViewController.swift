@@ -19,18 +19,14 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var tableView = TPKeyboardAvoidingTableView(frame: self.view.frame)
 
-        
-        self.tableView = tableView
+        self.tableView = TPKeyboardAvoidingTableView(frame: self.view.frame)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 80
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        self.tableView.registerClass(FeedProblemTableViewCell.self, forCellReuseIdentifier: "problemCell")
-        self.tableView.registerClass(FeedSolutionTableViewCell.self, forCellReuseIdentifier: "solutionCell")
-
+        self.tableView.registerClass(FeedProblemTableViewCell.self, forCellReuseIdentifier: "FeedProblemTableViewCell")
+        self.tableView.registerClass(FeedSolutionTableViewCell.self, forCellReuseIdentifier: "FeedSolutionTableViewCell")
         self.tableViewRefreshControl = UIRefreshControl(frame: self.tableView.frame)
         self.tableViewRefreshControl.addTarget(self, action: "getNewFeedItems", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.tableViewRefreshControl)
@@ -91,17 +87,20 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
         self.performSegueWithIdentifier("loggedOut", sender: nil)
     }
     
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var item = self.feedItems[indexPath.row] as! PFObject
         if item.parseClassName == "Problem"{
-            var cell = tableView.dequeueReusableCellWithIdentifier("problemCell", forIndexPath: indexPath) as! FeedProblemTableViewCell
+            var cell:FeedProblemTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedProblemTableViewCell") as! FeedProblemTableViewCell
             cell.backgroundColor = UIColor.redColor()
+            println("problem")
             return cell
         }
         else{
-            var cell = tableView.dequeueReusableCellWithIdentifier("solutionCell", forIndexPath: indexPath) as! FeedSolutionTableViewCell
+            var cell:FeedSolutionTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedSolutionTableViewCell") as! FeedSolutionTableViewCell
             cell.backgroundColor = UIColor.blueColor()
+
             return cell
         }
     }
@@ -110,6 +109,14 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
         if indexPath.row == self.feedItems.count - 1 && !self.noOlderItems{
             self.loadFeedItems("old")
         }
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 280
     }
 
     func addButtonTapped(){
@@ -226,6 +233,7 @@ class FeedTableViewController: UITableViewController, UITableViewDelegate, UITab
                         if context == "search"{
                             self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.None)
                         }
+                        println(self.tableView.numberOfRowsInSection(0))
                     }
                     else{
                         println("nothing")
